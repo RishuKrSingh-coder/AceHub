@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+  <!-- Cross button at page corner -->
+  <button class="close-btn" id="closeSignup" aria-label="Close sign up">
+    <svg viewBox="0 0 20 20" fill="none">
+      <line x1="5" y1="5" x2="15" y2="15" />
+      <line x1="15" y1="5" x2="5" y2="15" />
+    </svg>
+  </button>
+
+  <div class="container">
+    <h1>Sign up</h1>
+    <div class="member">
+      Already a member ?
+      <a href="#">login</a>
+    </div>
+    <button class="btn btn-google" onclick="socialSignup('Google')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="Google logo">
+      Sign up with Google
+    </button>
+    <button class="btn btn-facebook" onclick="socialSignup('Facebook')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook logo">
+      Sign up with Facebook
+    </button>
+    <button class="btn btn-apple" onclick="socialSignup('Apple')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple logo">
+      Sign up with Apple
+    </button>
+    <div class="divider"><span>or</span></div>
+    <button class="btn btn-email" onclick="emailSignup()">
+      Sign up with email
+    </button>
+  </div>
+  <script src="signin.js"></script>
+</body>
+</html>
